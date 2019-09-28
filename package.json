@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "homepage": "http://{domenicomanna}.github.io/{reactNavbar}",
+  "homepage": "http://domenicomanna.github.io/reactNavbar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
