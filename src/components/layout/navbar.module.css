@@ -17,12 +17,14 @@
   margin: 1rem 0 0 0;
   list-style: none;
   text-align: center;
+  /* display: none; */
   height: 0;
   overflow: hidden;
   transition: height .4s;
 }
 
-.showHamburgerLinks{
+.showHamburgerLinks {
+  /* display: block; */
   height: 114px;
 }
 
@@ -36,9 +38,10 @@
 
 .hamburger {
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 0px;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (min-width: 500px) {
@@ -48,21 +51,21 @@
     align-items: center;
   }
 
-  .brand{
+  .brand {
     margin: 0;
   }
 
   .mainNavigationLinks {
     display: flex;
     margin: 0;
-    height: auto; /* Make sure to explain why we set it back to auto */
+    height: auto; 
   }
 
   .link {
     width: auto;
     margin-bottom: 0;
     border-radius: 5px;
-    padding: .4rem .9rem;
+    padding: 0.4rem 0.9rem;
     transition: color 0.3s;
   }
 
@@ -72,7 +75,7 @@
     }
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
   }
 }

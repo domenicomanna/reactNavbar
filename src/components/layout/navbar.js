@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from '../../container/container';
-import styles from './header.module.css'
+import Container from '../container/container';
+import styles from './navbar.module.css'
 
-const Header = (props) => {
+const Navbar = props => {
   let classesForMainNavigationLinks = [styles.mainNavigationLinks];
   if (props.hamburgerLinksShouldShow) classesForMainNavigationLinks.push(styles.showHamburgerLinks)
 
@@ -24,7 +24,7 @@ const Header = (props) => {
           </ul>
           <span onClick={props.toggleHamburgerLinks}
             className={styles.hamburger}>
-            &#9776;
+            &#9776; {/* HTML entity code for hamburger menu */}
           </span>
         </nav>
       </Container>
@@ -32,4 +32,4 @@ const Header = (props) => {
   );
 }
 
-export default Header;
+export default Navbar;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './header/header'
+import Navbar from './navbar'
 import Container from '../container/container';
 
 class Layout extends Component {
@@ -17,7 +17,7 @@ class Layout extends Component {
   render() {
     return (
       <>
-        <Header
+        <Navbar
           hamburgerLinksShouldShow={this.state.hamburgerLinksShouldShow}
           toggleHamburgerLinks={this.toggleHamburgerLinks}
         />
